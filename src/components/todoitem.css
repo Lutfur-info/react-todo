@@ -1,0 +1,34 @@
+li {
+	margin-bottom: 6px;
+}
+li span {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 24px;
+}
+li span.crossicon {
+	margin-left: 10px;
+	position: relative;
+	width: 12px;
+	height: 12px;
+}
+li span.crossicon:after {
+	content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: rotate(-45deg);
+}
+li span.crossicon:before {
+	content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: rotate(45deg);
+}
